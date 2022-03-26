@@ -1,0 +1,14 @@
+.main {
+  margin: 0 3rem;
+}
+.sns-icons-container {
+  position: fixed;
+  top: 50%;
+  left: 3rem;
+  transform: translateY(-50%);
+}
+.sns-icon {
+  display: block;
+  margin: 2.5rem auto;
+  font-size: 1.5rem;
+}
