@@ -3,37 +3,62 @@ import NewItem from "./NewItem";
 
 import newItemImg1 from "../../images/newItems.webp";
 
-import "./NewItems.css";
-
 export default function NewItems() {
-  const newItems = {
-    srces: [
-      newItemImg1,
-      newItemImg1,
-      newItemImg1,
-      newItemImg1,
-      newItemImg1,
-      newItemImg1,
-    ],
-    items: [
-      "Lamb Fleece Lined Pant",
-      "Lamb Fleece Lined Sweatshirt",
-      "Luid Sweatshirt",
-      "Monaco Trench Coat",
-      "Field Slim Skirt",
-      "Fleece Sandiego Jogger Set",
-    ],
-    plices: ["73.60", "70.53", "33.73", "193.18", "61.23", "64.60"],
-  };
+  const newItems = [
+    {
+      id: 1,
+      src: newItemImg1,
+      item: "Lamb Fleece Lined Pant",
+      plice: "73.60",
+    },
+    {
+      id: 2,
+      src: newItemImg1,
+      item: "Lamb Fleece Lined Sweatshirt",
+      plice: "70.53",
+    },
+    {
+      id: 3,
+      src: newItemImg1,
+      item: "Luid Sweatshirt",
+      plice: "33.73",
+    },
+    {
+      id: 4,
+      src: newItemImg1,
+      item: "Monaco Trench Coat",
+      plice: "193.18",
+    },
+    {
+      id: 5,
+      src: newItemImg1,
+      item: "Field Slim Skirt",
+      plice: "61.23",
+    },
+    {
+      id: 6,
+      src: newItemImg1,
+      item: "Fleece Sandiego Jogger Set",
+      plice: "64.60",
+    },
+  ];
 
   return (
-    <div className="new-items">
-      <div className="new-items-titles">
-        <h2>NEW ITEMS</h2>
+    <div className="toppage-items">
+      <div className="toppage-items-titles">
+        <h3>NEW ITEMS</h3>
         <p>5% DISCOUNT</p>
       </div>
-
-      <NewItem />
+      <div className="toppage-item-cards">
+        {newItems.map((newItem) => (
+          <NewItem
+            key={newItem.id}
+            src={newItem.src}
+            item={newItem.item}
+            plice={newItem.plice}
+          />
+        ))}
+      </div>
     </div>
   );
 }

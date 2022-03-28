@@ -1,3 +1,10 @@
+.header {
+  margin: 7rem;
+}
+.header h1 {
+  font-size: 3rem;
+}
+
 .ShoppingBtns {
   display: flex;
   justify-content: right;

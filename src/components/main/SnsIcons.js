@@ -6,24 +6,37 @@ import {
   faPinterestP,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function SnsIcons() {
+export default function SnsIcons(props) {
   const snsHref = [
     "https://www.instagram.com/yjmood/",
     "https://www.facebook.com/yjmood",
     "https://www.pinterest.ca/Fashion_YJMood/_created/",
   ];
+
   return (
-    <div className="sns-icons-container">
+    <div className={`${props.class}`}>
       <a href={snsHref[0]}>
-        <FontAwesomeIcon className="sns-icon" icon={faInstagram} size="2x" />
+        <FontAwesomeIcon
+          className={`${props.class2}`}
+          icon={faInstagram}
+          size="2x"
+        />
       </a>
 
       <a href={snsHref[1]}>
-        <FontAwesomeIcon className="sns-icon" icon={faFacebookF} size="2x" />
+        <FontAwesomeIcon
+          className={`${props.class2}`}
+          icon={faFacebookF}
+          size="2x"
+        />
       </a>
 
       <a href={snsHref[2]}>
-        <FontAwesomeIcon className="sns-icon" icon={faPinterestP} size="2x" />
+        <FontAwesomeIcon
+          className={`${props.class2}`}
+          icon={faPinterestP}
+          size="2x"
+        />
       </a>
     </div>
   );
