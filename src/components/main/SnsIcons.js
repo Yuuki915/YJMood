@@ -6,8 +6,6 @@ import {
   faPinterestP,
 } from "@fortawesome/free-brands-svg-icons";
 
-import {} from "@fortawesome/free-solid-svg-icons";
-
 export default function SnsIcons(props) {
   const snsHref = [
     "https://www.instagram.com/yjmood/",
@@ -40,8 +38,6 @@ export default function SnsIcons(props) {
           size="2x"
         />
       </a>
-
-      <FontAwesomeIcon icon="fa-solid fa-circle-user" />
     </div>
   );
 }
