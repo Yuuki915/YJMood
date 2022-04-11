@@ -1,4 +1,5 @@
 import "./App.css";
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
 function App() {
@@ -20,6 +21,24 @@ function App() {
     </div>
   );
 >>>>>>> Stashed changes
+=======
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import Main from "./components/main/Main";
+import Product from "./components/product-pages/Product";
+
+function App() {
+  return (
+    <div className="App">
+      <Product />
+      <Header />
+
+      <Main />
+
+      <Footer />
+    </div>
+  );
+>>>>>>> eba8bf3733c6045be87a0a4d05d0270bb7242a24
 }
 
 export default App;
