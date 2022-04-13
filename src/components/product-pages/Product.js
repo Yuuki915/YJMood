@@ -1,8 +1,9 @@
 import React from "react";
-
 import productImg from "../../images/newItems.webp";
+import Color from "./Color";
 
 import "./Product.css";
+import Quantity from "./Quantity";
 
 export default function Product() {
   const productImgs = [productImg];
@@ -19,18 +20,9 @@ export default function Product() {
             <p className="product-plice">C$--.--</p>
           </div>
 
-          <div className="colors">
-            <h6 className="h6">Color</h6>
-            <div className="color-options">
-              <p>白</p>
-              <p>黒</p>
-            </div>
-          </div>
+          <Color />
 
-          <div className="quantity">
-            <h6 className="h6">Quantity</h6>
-            <div>Counter</div>
-          </div>
+          <Quantity />
 
           <button className="btn add-cart-btn">Add To Cart</button>
         </section>

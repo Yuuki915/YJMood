@@ -1,5 +1,5 @@
 .main {
-  margin: 10rem 3rem;
+  margin: 0 3rem;
 }
 .sns-icons-container {
   position: fixed;
@@ -11,8 +11,13 @@
   display: block;
   margin: 2.5rem auto;
   font-size: 1.5rem;
+  color: #333;
 }
 
+hr {
+  width: 10%;
+  margin: 1rem auto;
+}
 /* 
 
 --- NewItems.js & PopularItems.js --- 

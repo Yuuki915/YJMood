@@ -4,12 +4,19 @@
 .header-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 3rem;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #777;
   z-index: 3;
+  color: #fff;
 }
 .header h1 {
   font-size: 2rem;
+}
+.header-contact {
+  margin-left: auto;
+  padding-right: 0.5rem;
 }
 
 .ShoppingBtns {
@@ -18,7 +25,7 @@
   align-items: center;
 }
 .ShoppingBtns div {
-  margin: 0.5rem;
+  margin: 0.3rem;
   align-items: center;
   cursor: pointer;
 }
@@ -26,15 +33,18 @@
   display: flex;
   align-items: center;
 }
-.login-icon {
+.login-icon,
+.cart-icon,
+.favorite-icon {
   font-size: 25px;
-  margin-right: 0.5rem;
+  margin-right: 0.7rem;
 }
 
 .navMenu {
   display: flex;
   justify-content: center;
-  background-color: rgb(218, 218, 218);
+  /* background-color: rgb(218, 218, 218); */
+  background-color: rgba(212, 134, 147, 0.637);
 }
 .menu {
   list-style: none;
@@ -59,7 +69,7 @@
 label .lines {
   z-index: 999;
   position: fixed;
-  top: 1.5rem;
+  top: 1.7rem;
   right: 1.5rem;
   width: 2rem;
   height: 2rem;
@@ -73,6 +83,7 @@ label .lines {
   transition: all 0.5s;
 }
 .line2 {
+  color: #fff;
   position: absolute;
   top: 0.5rem;
   right: 0;
@@ -84,7 +95,7 @@ label .lines {
 
 #menu {
   display: block;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
   right: -15%;
