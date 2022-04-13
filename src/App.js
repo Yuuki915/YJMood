@@ -2,22 +2,21 @@ import "./App.css";
 import Product from "./components/product-pages/Product";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
+import NewPage from "./components/pages/NewPage";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Routes>
-          <Route path="/home" element={<Home />}>
-            <Link to="/">Home</Link>
-          </Route>
-          <Route path="/product" element={<Product />}></Route>
-        </Routes> */}
-        <Product />
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+          {/* pages */}
+          <Route path="/new" element={<NewPage />} />
+
+          <Route path="/product" element={<Product />} />
+        </Routes>
       </Router>
     </div>
   );
 }
-
-export default App;

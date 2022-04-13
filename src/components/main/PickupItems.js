@@ -30,14 +30,14 @@ export default function PickupItems() {
     pickup4: "add4",
   };
   return (
-    <div>
+    <div className="puis">
       <PickupItem
         src={items.src[0]}
         btn={items.btn[0]}
         class={classNames.pickup1}
       />
 
-      <h1 className="pickup-h1">What to wear in F/W</h1>
+      {/* <h1 className="pickup-h1">What to wear in F/W</h1> */}
 
       <PickupItem
         src={items.src[1]}

@@ -46,8 +46,8 @@ export default function NewItems() {
   return (
     <div className="toppage-items">
       <div className="toppage-items-titles">
-        <h3>NEW ITEMS</h3>
-        <p>5% DISCOUNT</p>
+        <h3>New Items</h3>
+        <hr />
       </div>
       <div className="toppage-item-cards">
         {newItems.map((newItem) => (
