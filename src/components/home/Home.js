@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Link to="/product">Product</Link>
+
       <Main />
 
       <Footer />

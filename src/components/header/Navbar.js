@@ -1,22 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const navbar = [
-    "Browse All",
-    "NEW",
-    "SALE",
-    "OUTER",
-    "TOPS",
-    "BOTTOMS",
-    "DRESSES",
-    "MEN",
-    "ACC",
-    "SET",
-    "PJs",
-    "19.99",
-    "Fast delivery",
-    "CONTACT",
-    "More",
+    "New",
+    "Sale",
+    "Tops",
+    "Bottoms",
+    "Dresses",
+    "Outer",
+    "Accessories",
+    "Set",
+    "Pajamas",
+    "Men",
+
+    // "19.99",
+    // "Fast delivery",
   ];
 
   return (
@@ -24,7 +23,7 @@ export default function Navbar() {
       <ul className="navMenu">
         {navbar.map((menu, id) => (
           <li className="menu" key={id}>
-            <a href="/">{menu}</a>
+            <Link to={`/${menu}`}>{menu}</Link>
           </li>
         ))}
       </ul>
