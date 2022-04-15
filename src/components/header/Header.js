@@ -24,6 +24,7 @@ export default function Header() {
     <div className="header">
       <div className="header-top">
         <h1>YJMOOD</h1>
+
         <div className="header-contact">Contact</div>
 
         <ShoppingBtn />

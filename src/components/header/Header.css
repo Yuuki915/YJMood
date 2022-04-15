@@ -54,6 +54,8 @@
   letter-spacing: 1px;
 }
 .navMenu a {
+  color: #fff;
+  letter-spacing: 1px;
   text-decoration: none;
   width: auto;
   height: auto;
