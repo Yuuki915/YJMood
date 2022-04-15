@@ -45,11 +45,11 @@ export default function NewItems() {
 
   return (
     <div className="toppage-items">
-      <div className="toppage-items-titles">
+      <div className="items-title">
         <h3>New Items</h3>
         <hr />
       </div>
-      <div className="toppage-item-cards">
+      <div className="item-cards">
         {newItems.map((newItem) => (
           <NewItem
             key={newItem.id}

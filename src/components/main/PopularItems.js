@@ -45,11 +45,11 @@ export default function PopularItems() {
 
   return (
     <div className="toppage-items">
-      <div className="toppage-items-titles">
+      <div className="items-title">
         <h3>Most Wanted</h3>
         <hr />
       </div>
-      <div className="toppage-item-cards">
+      <div className="item-cards">
         {popularItems.map((popularItem) => (
           <PopularItem
             key={popularItem.id}

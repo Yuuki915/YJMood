@@ -2,7 +2,7 @@ import React from "react";
 
 import SnsIcons from "../main/SnsIcons";
 
-export default function Footer(props) {
+export default function Footer() {
   const footers = [
     {
       h3: "YJMOOD",
@@ -80,6 +80,7 @@ export default function Footer(props) {
       </div>
 
       <SnsIcons class={footerIconClass[0]} class2={footerIconClass[1]} />
+      <hr />
       <p className="copyright">&copy; 2022 by YJMood</p>
     </div>
   );
