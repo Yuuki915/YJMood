@@ -117,3 +117,6 @@
   border-radius: 50%;
   cursor: pointer;
 }
+.ham-class-img:hover {
+  transform: rotate(15deg);
+}
