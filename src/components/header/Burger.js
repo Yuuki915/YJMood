@@ -1,13 +1,12 @@
-// import { stack as Menu } from "react-burger-menu";
-
 import React from "react";
-import { CgMenuRightAlt } from "react-icons/cg";
-import { MdClose } from "react-icons/md";
 import { useState } from "react";
 import Navbar from "./Navbar";
+import { CgMenuRightAlt } from "react-icons/cg";
+import { MdClose } from "react-icons/md";
 
 export default function Burger() {
   const [open, setOpen] = useState(false);
+  const hamClass = "ham-class";
 
   const openHamIcon = (
     <CgMenuRightAlt
@@ -26,18 +25,14 @@ export default function Burger() {
     />
   );
 
+  const closeMenu = () => setOpen(false);
+
   return (
     <div id="outer-container">
-      {/* <Menu
-        pageWrapId={"page-wrap"}
-        outerContainerId={"outer-container"}
-        right
-        width={280}
-        disableCloseOnEsc
-      /> */}
-
       {open ? closeHamIcon : openHamIcon}
-      {open && <Navbar />}
+      {open && (
+        <Navbar hamClass={hamClass} isMobile={true} closeMenu={closeMenu} />
+      )}
 
       <main id="page-wrap"></main>
     </div>

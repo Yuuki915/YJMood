@@ -28,45 +28,6 @@ export default function ShoppingBtn() {
       </div>
 
       <Burger />
-      {/* <div className="hum"> */}
-      {/* <input type="checkbox" id="humberger" />
-        <label for="humberger">
-          <div className="lines">
-            <span className="line1"></span>
-            <span className="line2"></span>
-          </div>
-        </label>
-        <label className="light-dark" for="humberger"></label> */}
-
-      {/* <ul className="menu-in-hum">
-          <li>
-            <a href="/">About</a>
-          </li>
-          <li>
-            <a href="/">News</a>
-          </li>
-          <li>
-            <a href="/">Shopping</a>
-            <ul>
-              <li>
-                <a href="/">ピアス</a>
-              </li>
-              <li>
-                <a href="/">イヤリング</a>
-              </li>
-              <li>
-                <a href="/">ヘアゴム</a>
-              </li>
-              <li>
-                <a href="/">リング</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="/">Activities</a>
-          </li>
-        </ul> */}
-      {/* </div> */}
     </div>
   );
 }
