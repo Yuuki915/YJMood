@@ -94,9 +94,48 @@ label .lines {
 }
 #menu a {
   color: #333;
-  display: block;
-  text-align: center;
-  padding: 1rem;
+  animation: slideIn 1s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.ham-class-1 {
+  animation-delay: 0.05s;
+}
+.ham-class-2 {
+  animation-delay: 0.1s;
+}
+.ham-class-3 {
+  animation-delay: 0.15s;
+}
+.ham-class-4 {
+  animation-delay: 0.2s;
+}
+.ham-class-5 {
+  animation-delay: 0.25s;
+}
+.ham-class-6 {
+  animation-delay: 0.3s;
+}
+.ham-class-7 {
+  animation-delay: 0.35s;
+}
+.ham-class-8 {
+  animation-delay: 0.4s;
+}
+.ham-class-9 {
+  animation-delay: 0.45s;
+}
+.ham-class-10 {
+  animation-delay: 0.5s;
 }
 #menu li:hover > ul {
   opacity: 0;
