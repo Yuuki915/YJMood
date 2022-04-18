@@ -1,8 +1,23 @@
 .header {
-  margin: 7rem 5rem;
+  /* margin: 7rem 5rem; */
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  /* background-color: #777; */
+  box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  color: #333;
 }
 .header h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+.header-contact {
+  margin-left: auto;
+  padding-right: 0.5rem;
 }
 
 .ShoppingBtns {
@@ -10,31 +25,98 @@
   justify-content: right;
   align-items: center;
 }
-.ShoppingBtns div {
+
+.login-btn {
   margin: 0.5rem;
+  display: flex;
   align-items: center;
   cursor: pointer;
 }
-.login-btn {
-  display: flex;
-  align-items: center;
-}
-.login-icon {
+.login-icon,
+.cart-icon,
+.favorite-icon {
   font-size: 25px;
-  margin-right: 0.5rem;
+  margin-right: 0.7rem;
 }
 
 .navMenu {
   display: flex;
   justify-content: center;
+  /* background-color: rgb(218, 218, 218); */
+  background-color: rgba(212, 134, 147, 0.637);
 }
 .menu {
   list-style: none;
   margin: 0.5rem;
-  font-size: 10px;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 .navMenu a {
+  color: #fff;
+  letter-spacing: 1px;
   text-decoration: none;
   width: auto;
   height: auto;
+}
+
+/* 
+  humberger 
+*/
+.hamburger {
+  position: fixed;
+  right: 1.7rem;
+  top: 1.5rem;
+  z-index: 3;
+  cursor: pointer;
+}
+.ham-class-dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.7);
+  margin: 0;
+  cursor: default;
+}
+.ham-class {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 50%;
+  height: 100%;
+  padding: 0 3rem;
+  overflow: scroll;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+.ham-class-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  margin: 0 2rem;
+  color: #333;
+}
+
+.ham-class-li a {
+  color: #333;
+  padding-top: 0.5rem;
+}
+.ham-img {
+  display: none;
+}
+.ham-class-img {
+  display: inline-block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.ham-class-img:hover {
+  transform: rotate(15deg);
 }
