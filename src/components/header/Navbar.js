@@ -1,20 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import hamImg from "../../images/pickup1.jpg";
-import { motion } from "framer-motion";
 
 export default function Navbar(props) {
   const navMenu = [
-    { menu: "New", hamImg: hamImg, delay: 0.05 },
-    { menu: "Sale", hamImg: hamImg, delay: 0.1 },
-    { menu: "Tops", hamImg: hamImg, delay: 0.15 },
-    { menu: "Bottoms", hamImg: hamImg, delay: 0.2 },
-    { menu: "Dresses", hamImg: hamImg, delay: 0.25 },
-    { menu: "Outer", hamImg: hamImg, delay: 0.3 },
-    { menu: "Accessories", hamImg: hamImg, delay: 0.35 },
-    { menu: "Set", hamImg: hamImg, delay: 0.4 },
-    { menu: "Pajamas", hamImg: hamImg, delay: 0.45 },
-    { menu: "Men", hamImg: hamImg, delay: 0.5 },
+    { menu: "New", hamImg: hamImg, delay: 1 },
+    { menu: "Sale", hamImg: hamImg, delay: 2 },
+    { menu: "Tops", hamImg: hamImg, delay: 3 },
+    { menu: "Bottoms", hamImg: hamImg, delay: 4 },
+    { menu: "Dresses", hamImg: hamImg, delay: 5 },
+    { menu: "Outer", hamImg: hamImg, delay: 6 },
+    { menu: "Accessories", hamImg: hamImg, delay: 7 },
+    { menu: "Set", hamImg: hamImg, delay: 8 },
+    { menu: "Pajamas", hamImg: hamImg, delay: 9 },
+    { menu: "Men", hamImg: hamImg, delay: 10 },
 
     // "19.99",
     // "Fast delivery",
@@ -28,21 +27,20 @@ export default function Navbar(props) {
       <div className={`${props.hamClass}-dark`} onClick={props.closeMenu}></div>
       <ul className={`navMenu ${props.hamClass}`}>
         {navMenu.map((nav, key) => (
-          <motion.li
+          <li
             key={key}
-            className={`menu ${props.hamClass}-li`}
-            initial={animateFrom}
-            animate={animateTo}
-            transition={{ delay: `${nav.delay}` }}
+            className={`menu ${props.hamClass}-li ${props.hamClass}-${nav.delay}`}
             onClick={() => props.isMobile && props.closeMenu()}
           >
-            <img
-              src={nav.hamImg}
-              alt=""
-              className={`ham-img ${props.hamClass}-img`}
-            />
+            <Link to={`/${nav.menu}`}>
+              <img
+                src={nav.hamImg}
+                alt=""
+                className={`ham-img ${props.hamClass}-img`}
+              />
+            </Link>
             <Link to={`/${nav.menu}`}>{nav.menu}</Link>
-          </motion.li>
+          </li>
         ))}
       </ul>
     </nav>
