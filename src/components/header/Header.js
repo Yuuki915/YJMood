@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../buttoms/Button";
 import "./Header.css";
 import Navbar from "./Navbar";
 import ShoppingBtn from "./ShoppingBtn";
@@ -24,8 +25,11 @@ export default function Header() {
       <div className="header-top">
         <h1>YJMOOD</h1>
 
+        <div className="header-contact">Contact</div>
+
         <ShoppingBtn />
       </div>
+
       <Navbar />
     </div>
   );

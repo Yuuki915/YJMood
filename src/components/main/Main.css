@@ -1,5 +1,5 @@
 .main {
-  margin: 10rem 3rem;
+  margin: 0 3rem;
 }
 .sns-icons-container {
   position: fixed;
@@ -11,8 +11,13 @@
   display: block;
   margin: 2.5rem auto;
   font-size: 1.5rem;
+  color: #333;
 }
 
+.items-title hr {
+  width: 10%;
+  margin: 1rem auto;
+}
 /* 
 
 --- NewItems.js & PopularItems.js --- 
@@ -21,37 +26,36 @@
 
 .toppage-items {
   width: 100%;
+  margin-top: 5rem;
 }
 .toppage-items-titles {
   margin: 7rem 0 3rem;
   letter-spacing: 2px;
 }
-.toppage-items-titles h3 {
+.toppage-items-title h3 {
   font-size: 24px;
 }
-.toppage-items-titles p {
-  font-size: 14px;
-  font-weight: 900;
-  color: rgb(169, 182, 164);
-}
-.toppage-item-cards {
+
+.item-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.toppage-item {
-  width: 200px;
-  margin: 0 1rem;
+.page-item {
+  margin: 1rem;
 }
-.toppage-item-img-container {
+.page-item img {
+  width: 200px;
+  height: auto;
+}
+.item-img-container {
   margin-top: 1rem;
   cursor: pointer;
 }
-.toppage-item-img {
+.item-img {
   width: 100%;
 }
-.toppage-item-details {
+.item-details {
   text-align: left;
   font-size: 13px;
 }

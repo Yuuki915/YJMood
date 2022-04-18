@@ -1,6 +1,7 @@
 .product-detail {
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
 }
 .product-detail-options {
   width: 300px;
@@ -11,8 +12,8 @@
   margin: 1rem 0;
 }
 
-.colors,
-.quantity {
+.colors-in-product,
+.quantity-in-product {
   margin: 1rem 0;
 }
 .color-options {
@@ -22,10 +23,16 @@
   margin-right: 0.3rem;
 }
 
+.h6 {
+  margin: 0.5rem 0;
+  font-size: 13px;
+  /* font-size: 40px; */
+  font-weight: 100;
+}
+
 .add-cart-btn {
   width: 100%;
   padding: 0.5rem 0;
-  color: #fff;
   font-size: 13px;
   background-color: rgb(83, 97, 77);
   border: none;
@@ -34,4 +41,14 @@
 .add-cart-btn:hover {
   background-color: rgba(83, 97, 77, 0.7);
   border: none;
+}
+
+.quantity-input {
+  width: 5rem;
+  height: 2.5rem;
+  border: 1px solid #999;
+}
+input[type="number"]:focus {
+  border: 1px solid #999;
+  outline: 0;
 }

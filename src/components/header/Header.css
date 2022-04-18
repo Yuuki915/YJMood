@@ -4,12 +4,20 @@
 .header-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 3rem;
   background-color: #fff;
+  /* background-color: #777; */
+  box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.5);
   z-index: 3;
+  color: #333;
 }
 .header h1 {
   font-size: 2rem;
+}
+.header-contact {
+  margin-left: auto;
+  padding-right: 0.5rem;
 }
 
 .ShoppingBtns {
@@ -17,29 +25,31 @@
   justify-content: right;
   align-items: center;
 }
-.ShoppingBtns div {
+
+.login-btn {
   margin: 0.5rem;
+  display: flex;
   align-items: center;
   cursor: pointer;
 }
-.login-btn {
-  display: flex;
-  align-items: center;
-}
-.login-icon {
+.login-icon,
+.cart-icon,
+.favorite-icon {
   font-size: 25px;
-  margin-right: 0.5rem;
+  margin-right: 0.7rem;
 }
 
 .navMenu {
   display: flex;
   justify-content: center;
-  background-color: rgb(218, 218, 218);
+  /* background-color: rgb(218, 218, 218); */
+  background-color: rgba(212, 134, 147, 0.637);
 }
 .menu {
   list-style: none;
   margin: 0.5rem;
   font-size: 13px;
+  letter-spacing: 1px;
 }
 .navMenu a {
   color: #fff;
@@ -52,47 +62,43 @@
 /* 
   humberger 
 */
-#humberger {
-  opacity: 0;
+.hamburger {
   position: fixed;
-}
-label .lines {
-  z-index: 999;
-  position: fixed;
+  right: 1.7rem;
   top: 1.5rem;
-  right: 1.5rem;
-  width: 2rem;
-  height: 2rem;
+  z-index: 3;
+  cursor: pointer;
 }
-.line1 {
-  position: absolute;
-  right: 0;
-  width: 1.5rem;
-  height: 0.15rem;
-  background-color: #333;
-  transition: all 0.5s;
-}
-.line2 {
-  position: absolute;
-  top: 0.5rem;
-  right: 0;
-  width: 1rem;
-  height: 0.15rem;
-  background-color: #333;
-  transition: all 0.5s;
-}
-
-#menu {
-  display: block;
-  background-color: rgb(233, 233, 233);
+.ham-class-dark {
   position: fixed;
   top: 0;
-  right: -15%;
-  transition: all 1s;
-  width: 15%;
-  height: 100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.7);
+  margin: 0;
+  cursor: default;
 }
-#menu a {
+.ham-class {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 50%;
+  height: 100%;
+  padding: 0 3rem;
+  overflow: scroll;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+.ham-class-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  margin: 0 2rem;
   color: #333;
   animation: slideIn 1s ease-in-out forwards;
   opacity: 0;
@@ -146,99 +152,22 @@ label .lines {
 #humberger:checked ~ #menu {
   right: 0;
 }
-#humberger:checked + label .lines .line1 {
-  top: 10%;
-  width: 80%;
-  transform: rotate(-45deg);
-}
-#humberger:checked + label .lines .line2 {
-  top: 10%;
-  width: 80%;
-  transform: rotate(45deg);
-}
-#humberger:checked ~ .light-dark {
-  background-color: #333;
-  opacity: 0.3;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
 
-/* #menu {
-  display: flex;
-  justify-content: right;
-  padding: 1.5rem;
-  background-color: #4494a6c9;
+.ham-class-li a {
+  color: #333;
+  padding-top: 0.5rem;
 }
-#menu a {
-  font-size: 15px;
-  letter-spacing: 2px;
-  vertical-align: bottom;
-  padding: 2rem;
-} */
-/* #menu li {
-  position: relative;
-  z-index: 999;
+.ham-img {
+  display: none;
 }
-#menu li ul {
-  position: absolute;
-  left: calc(0% + 0.5rem);
-  top: calc(100% + 0.5rem);
-  padding: 0.75rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-  background-color: #2f6073bb;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-10px);
-  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
-}
-#menu li:hover > ul {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-#menu li ul li {
-  padding: 0.5rem 1rem;
-  text-align: center;
-}
-#menu li ul li a {
+.ham-class-img {
+  display: inline-block;
   margin: 0 auto;
-  padding: 0;
-  font-size: 13px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
 }
-#menu li ul li:nth-child(n + 2) {
-  border-top: 1px solid white;
+.ham-class-img:hover {
+  transform: rotate(15deg);
 }
-
-.lname {
-  stroke-dasharray: 5000;
-  stroke-dashoffset: 5000;
-  animation-name: lname-anime;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
-  stroke: #fff;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: #fbf9f700;
-  filter: drop-shadow(3px 3px 5px #999);
-} */
-/* @keyframes lname-anime {
-  0% {
-    stroke-dashoffset: 5000;
-  }
-
-  30% {
-    stroke-dashoffset: 0;
-  }
-
-  50% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 5000;
-  }
-} */
