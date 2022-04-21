@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../buttoms/Button";
 import "./Header.css";
 import Navbar from "./Navbar";
 import ShoppingBtn from "./ShoppingBtn";

@@ -3,6 +3,7 @@ import Header from "../header/Header";
 import Footer from "../footer/Footer";
 
 import "./PageBase.css";
+import { Link } from "react-router-dom";
 
 export default function PageBase(props) {
   return (
@@ -18,13 +19,15 @@ export default function PageBase(props) {
         <div className="item-cards">
           {props.newPage.map((e) => (
             <div className="page-item" key={e.id}>
-              <div className="item-img-container">
-                <img src={e.img} alt="" />
-              </div>
-              <div className="item-details">
-                <p className="item">{e.item}</p>
-                <p className="price">C${e.price}</p>
-              </div>
+              <Link to={`/product`}>
+                <div className="item-img-container">
+                  <img src={e.img} alt="" />
+                </div>
+                <div className="item-details">
+                  <p className="item">{e.item}</p>
+                  <p className="price">C${e.price}</p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

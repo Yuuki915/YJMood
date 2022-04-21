@@ -5,8 +5,9 @@ import Color from "./Color";
 import "./Product.css";
 import Quantity from "./Quantity";
 
-export default function Product() {
-  const productImgs = [productImg];
+export default function Product(props) {
+  const productImgs = [];
+  console.log(props.newPage.map((e) => e.id));
   return (
     <div className="product">
       <div className="product-detail">

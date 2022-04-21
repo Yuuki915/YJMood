@@ -19,9 +19,6 @@ export default function Navbar(props) {
     // "Fast delivery",
   ];
 
-  const animateFrom = { opacity: 0, x: 40 };
-  const animateTo = { opacity: 1, x: 0 };
-
   return (
     <nav className="navbar">
       <div className={`${props.hamClass}-dark`} onClick={props.closeMenu}></div>

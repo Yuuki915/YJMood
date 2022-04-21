@@ -100,7 +100,7 @@
   margin: 0;
   margin: 0 2rem;
   color: #333;
-  animation: slideIn 1s ease-in-out forwards;
+  animation: slideIn 1s ease-out forwards;
   opacity: 0;
 }
 @keyframes slideIn {
