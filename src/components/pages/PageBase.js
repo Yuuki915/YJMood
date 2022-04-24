@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-
+import src from "../../images/newItems.webp";
 import "./PageBase.css";
 import { Link } from "react-router-dom";
 
@@ -17,11 +17,11 @@ export default function PageBase(props) {
         </div>
 
         <div className="item-cards">
-          {props.newPage.map((e) => (
+          {props.pageData.map((e) => (
             <div className="page-item" key={e.id}>
-              <Link to={`/product`}>
+              <Link to={`/product-${e.item}`}>
                 <div className="item-img-container">
-                  <img src={e.img} alt="" />
+                  <img src={src} alt="" />
                 </div>
                 <div className="item-details">
                   <p className="item">{e.item}</p>
