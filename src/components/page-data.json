@@ -3,31 +3,31 @@
     "newPage": [
       {
         "id": 1,
-        "img": "../../../images/newItems.webp",
-        "item": "New Item",
+        "img": "../../images/newItems.webp",
+        "item": "NewItem",
         "price": 23.12
       },
       {
         "id": 2,
-        "img": "../../../images/pickup1.jpg",
-        "item": "Pick Up",
+        "img": "../../images/pickup1.jpg",
+        "item": "PickUp",
         "price": 23.12
       },
       {
         "id": 3,
-        "img": "../../../images/newItems.webp",
+        "img": "../../images/newItems.webp",
         "item": "abcde",
         "price": 23.12
       },
       {
         "id": 4,
-        "img": "../../../images/newItems.webp",
+        "img": "../../images/newItems.webp",
         "item": "abcde",
         "price": 23.12
       },
       {
         "id": 5,
-        "img": "../../../images/newItems.webp",
+        "img": "../../images/newItems.webp",
         "item": "abcde",
         "price": 23.12
       }
@@ -37,31 +37,31 @@
     "salePage": [
       {
         "id": 1,
-        "img": "../../../images/newItems.webp",
+        "img": "../../images/newItems.webp",
         "item": "New Item",
         "price": 23.12
       },
       {
         "id": 2,
-        "img": "../../../images/pickup1.jpg",
+        "img": "../../images/pickup1.jpg",
         "item": "Pick Up",
         "price": 23.12
       },
       {
         "id": 3,
-        "img": "../../../images/newItems.webp",
+        "img": "../../images/newItems.webp",
         "item": "abcde",
         "price": 23.12
       },
       {
         "id": 4,
-        "img": "../../../images/newItems.webp",
+        "img": "../../images/newItems.webp",
         "item": "abcde",
         "price": 23.12
       },
       {
         "id": 5,
-        "img": "../../../images/newItems.webp",
+        "img": "../../images/newItems.webp",
         "item": "abcde",
         "price": 23.12
       }

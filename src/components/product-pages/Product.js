@@ -1,5 +1,7 @@
 import React from "react";
 import productImg from "../../images/newItems.webp";
+import Footer from "../footer/Footer";
+import Header from "../header/Header";
 import Color from "./Color";
 
 import "./Product.css";
@@ -7,9 +9,9 @@ import Quantity from "./Quantity";
 
 export default function Product(props) {
   const productImgs = [productImg];
-  console.log(props.newPage.map((e) => e.id));
   return (
     <div className="product">
+      <Header />
       <div className="product-detail">
         <section className="product-detail-img">
           <img src={productImgs} alt="" />
@@ -28,6 +30,7 @@ export default function Product(props) {
           <button className="btn add-cart-btn">Add To Cart</button>
         </section>
       </div>
+      <Footer />
     </div>
   );
 }

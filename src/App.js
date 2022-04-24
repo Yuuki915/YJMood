@@ -1,4 +1,5 @@
 import "./App.css";
+import pageData from "./components/page-data.json";
 import Product from "./components/product-pages/Product";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
@@ -15,6 +16,8 @@ import PajamasPage from "./components/pages/page/PajamasPage";
 import MenPage from "./components/pages/page/MenPage";
 
 export default function App() {
+  // pageData[0].newPage.map((e) => console.log(e.id));
+
   return (
     <div className="App">
       <Router>
@@ -34,7 +37,13 @@ export default function App() {
           <Route path="/men" element={<MenPage />} />
 
           {/* その他子ページ */}
-          <Route path={`product`} element={<Product />} />
+          {pageData[0].newPage.map((e, key) => (
+            <Route
+              key={key}
+              path={`/product-${e.item}`}
+              element={<Product />}
+            />
+          ))}
         </Routes>
       </Router>
     </div>
