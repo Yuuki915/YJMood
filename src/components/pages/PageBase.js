@@ -18,8 +18,9 @@ export default function PageBase(props) {
 
         <div className="item-cards">
           {props.newPage.map((e) => (
+            // console.log(e[e.id])
             <div className="page-item" key={e.id}>
-              <Link to={`/product`}>
+              <Link to={`/${props.link}-product`}>
                 <div className="item-img-container">
                   <img src={e.img} alt="" />
                 </div>

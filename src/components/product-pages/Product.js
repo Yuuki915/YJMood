@@ -6,7 +6,7 @@ import "./Product.css";
 import Quantity from "./Quantity";
 
 export default function Product(props) {
-  const productImgs = [];
+  const productImgs = [productImg];
   console.log(props.newPage.map((e) => e.id));
   return (
     <div className="product">

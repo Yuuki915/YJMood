@@ -14,7 +14,7 @@ import SetPage from "./components/pages/page/SetPage";
 import PajamasPage from "./components/pages/page/PajamasPage";
 import MenPage from "./components/pages/page/MenPage";
 
-export default function App(props) {
+export default function App() {
   return (
     <div className="App">
       <Router>
