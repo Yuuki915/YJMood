@@ -4,6 +4,7 @@ import PickupItems from "./PickupItems";
 import PopularItems from "./PopularItems";
 
 import "./Main.css";
+import "../Mobile.css";
 import SnsIcons from "./SnsIcons";
 
 export default function Main() {

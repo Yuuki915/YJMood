@@ -39,7 +39,7 @@
   margin-right: 0.7rem;
 }
 
-.navMenu {
+.nav-menu {
   display: flex;
   justify-content: center;
   /* background-color: rgb(218, 218, 218); */
@@ -51,7 +51,7 @@
   font-size: 13px;
   letter-spacing: 1px;
 }
-.navMenu a {
+.nav-menu a {
   color: #fff;
   letter-spacing: 1px;
   text-decoration: none;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import hamImg from "../../images/pickup1.jpg";
 
@@ -22,7 +22,7 @@ export default function Navbar(props) {
   return (
     <nav className="navbar">
       <div className={`${props.hamClass}-dark`} onClick={props.closeMenu}></div>
-      <ul className={`navMenu ${props.hamClass}`}>
+      <ul className={`nav-menu ${props.hamClass}`}>
         {navMenu.map((nav, key) => (
           <li
             key={key}

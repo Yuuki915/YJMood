@@ -30,7 +30,7 @@ export default function PickupItems() {
     pickup4: "add4",
   };
   return (
-    <div className="puis">
+    <div className="pickupItems">
       <PickupItem
         src={items.src[0]}
         btn={items.btn[0]}
