@@ -12,13 +12,9 @@ export default function Main() {
   return (
     <div className="main">
       <SnsIcons class={mainIconClass[0]} class2={mainIconClass[1]} />
-
       <PickupItems />
-
       <NewItems />
-
-      <PopularItems />
-
+      {/* <PopularItems /> */}
       <div className="company-name">#YJMOOD</div>
     </div>
   );

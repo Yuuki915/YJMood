@@ -62,7 +62,7 @@
 .item {
   margin: 1rem 0 0.3rem;
 }
-.plice {
+.price {
   font-size: 12px;
 }
 
@@ -73,4 +73,17 @@
   color: rgb(83, 97, 77);
 
   margin: 7rem;
+}
+
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px 10px 0 0;
+  border: 1px solid black;
+}
+.color-box {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
 }

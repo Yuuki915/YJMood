@@ -1,6 +1,6 @@
 import React from "react";
 import PageBase from "../PageBase";
-import pageData from "../../page-data.json";
+import pageData from "../../../data/new-data.json";
 
 // import newItemImg from "../../../images/newItems.webp";
 // import pickupImg from "../../../images/pickup1.jpg";
