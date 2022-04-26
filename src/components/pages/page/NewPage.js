@@ -1,6 +1,9 @@
 import React from "react";
 import PageBase from "../PageBase";
-import pageData from "../../../data/new-data.json";
+import pageData from "../../page-data.json";
+
+// import newItemImg from "../../../images/newItems.webp";
+// import pickupImg from "../../../images/pickup1.jpg";
 
 export default function NewPage() {
   const pageH2 = "New Arrivals";
@@ -16,7 +19,7 @@ export default function NewPage() {
   return (
     <div className="new-page">
       {/* <PageBase h2={pageH2} newPage={newPage} link={link} /> */}
-      <PageBase h2={pageH2} pageData={pageData} link={link} />
+      <PageBase h2={pageH2} pageData={pageData[0].newPage} link={link} />
     </div>
   );
 }

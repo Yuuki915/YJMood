@@ -8,7 +8,7 @@ export default function PopularItem(props) {
       </div>
       <div className="item-details">
         <p className="item">{props.item} </p>
-        <p className="price">{`C$ ${props.price}`}</p>
+        <p className="plice">{`C$ ${props.plice}`}</p>
       </div>
     </div>
   );
