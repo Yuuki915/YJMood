@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import src from "../../images/newItems.webp";
 import "./PageBase.css";
 import { Link } from "react-router-dom";
 
@@ -21,7 +20,7 @@ export default function PageBase(props) {
             <div className="page-item" key={e.id}>
               <Link to={`/product-${e.title}`}>
                 <div className="item-img-container">
-                  <img src={src} alt="" />
+                  <img src={e.img} alt="" />
                 </div>
                 <div className="item-details">
                   <p className="item">{e.title}</p>
