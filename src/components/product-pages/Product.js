@@ -10,7 +10,7 @@ import SizeOption from "./SizeOption";
 import "./Product.css";
 
 function Product(props) {
-  const [productColor, setProductColor] = useState(null);
+  // const [productColor, setProductColor] = useState(null);
   const [productQuantity, setProductQuantity] = useState(0);
   let item = null;
   const handleSelectOption = (id) => {
