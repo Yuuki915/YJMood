@@ -26,6 +26,33 @@ li {
 
 /* 
 
+  login, resister
+
+*/
+.login-container {
+}
+.input-form {
+}
+.input-form input {
+  display: block;
+  margin: 1rem auto;
+  width: 30%;
+  height: 2rem;
+}
+.input-form input:focus {
+  background-color: rgb(232, 252, 232);
+}
+.input-form button {
+  width: 30%;
+  height: 2rem;
+  background-color: #04aa6d;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 
+
   Footer.js
 
 */
