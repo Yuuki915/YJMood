@@ -15,8 +15,10 @@ import SetPage from "./components/pages/page/SetPage";
 import PajamasPage from "./components/pages/page/PajamasPage";
 import Products from "./components/pages/Products";
 // import MenPage from "./components/pages/page/MenPage";
+
 // import Test from "./Test";
 // import ToggleBtn from "./Test";
+
 export default function App() {
   // console.log(pageData.map((e) => e.id));
 
@@ -50,8 +52,10 @@ export default function App() {
           ))}
         </Routes>
       </Router>
+
       {/* <Test /> */}
       {/* <ToggleBtn /> */}
+
     </div>
   );
 }
