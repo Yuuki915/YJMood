@@ -13,7 +13,6 @@ import OuterPage from "./components/pages/page/OuterPage";
 import AccessoriesPage from "./components/pages/page/AccessoriesPage";
 import SetPage from "./components/pages/page/SetPage";
 import PajamasPage from "./components/pages/page/PajamasPage";
-import Products from "./components/pages/Products";
 // import MenPage from "./components/pages/page/MenPage";
 
 // import Test from "./Test";
@@ -38,7 +37,6 @@ export default function App() {
           <Route path="/accessories" element={<AccessoriesPage />} />
           <Route path="/set" element={<SetPage />} />
           <Route path="/pajamas" element={<PajamasPage />} />
-          <Route path="/products" element={<Products />} />
           <Route path="/product/:productId" element={<Product />} />
           {/* <Route path="/men" element={<MenPage />} /> */}
 
@@ -55,7 +53,6 @@ export default function App() {
 
       {/* <Test /> */}
       {/* <ToggleBtn /> */}
-
     </div>
   );
 }
