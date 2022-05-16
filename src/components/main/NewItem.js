@@ -13,11 +13,11 @@ export default function NewItem(props) {
         <p className="item">{props.title} </p>
         <p className="price">{`C$ ${props.price}`}</p>
         <div className="colors">
-          {props.colors.length != 0 ? (
+          {props.colors.length !== 0 ? (
             <div className="color-box">
               {props.colors.map((color) => (
-                <>
-                  <li key={color.colorId}>
+                <div key={color.colorId}>
+                  <li>
                     <div
                       className="color-circle"
                       style={{
@@ -25,7 +25,7 @@ export default function NewItem(props) {
                       }}
                     ></div>
                   </li>
-                </>
+                </div>
               ))}
             </div>
           ) : (

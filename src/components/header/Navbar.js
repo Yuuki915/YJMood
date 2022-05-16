@@ -13,10 +13,6 @@ export default function Navbar(props) {
     { menu: "Accessories", hamImg: hamImg, delay: 7 },
     { menu: "Set", hamImg: hamImg, delay: 8 },
     { menu: "Pajamas", hamImg: hamImg, delay: 9 },
-    // { menu: "Men", hamImg: hamImg, delay: 10 },
-
-    // "19.99",
-    // "Fast delivery",
   ];
 
   return (
