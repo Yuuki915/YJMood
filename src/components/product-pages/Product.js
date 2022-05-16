@@ -13,6 +13,7 @@ function Product(props) {
   const [productColor, setProductColor] = useState(null);
   const [productQuantity, setProductQuantity] = useState(0);
   let item = null;
+
   const handleSelectOption = (id) => {
     item = props.colors.find((item) => item.colorId === id);
     console.log(item);
@@ -32,7 +33,7 @@ function Product(props) {
             <p className="product-price">C$ {props.price}</p>
           </div>
 
-          {props.colors.length != 0 ? (
+          {props.colors.length !== 0 ? (
             <>
               <Color
                 colors={props.colors}

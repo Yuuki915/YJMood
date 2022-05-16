@@ -18,7 +18,7 @@ export default function PageBase(props) {
         <div className="item-cards">
           {props.pageData.map((e) => (
             <div className="page-item" key={e.id}>
-              <Link to={`/product-${e.title}`}>
+              <Link to={`/product/${e.id}`}>
                 <div className="item-img-container">
                   <img src={e.img} alt="" />
                 </div>

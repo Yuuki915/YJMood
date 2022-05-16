@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Product.css";
 
 function Color(props) {
@@ -12,19 +12,17 @@ function Color(props) {
       <div className="color-options">
         <div className="color-box">
           {props.colors.map((color) => (
-            <>
-              <div key={color.colorId}>
-                <div
-                  key={color.colorName}
-                  onClick={() => props.handleSelectOption(color.colorId)}
-                  // onClick={() => props.handleSelectOption(color.colorId)}
-                  className="color-circle"
-                  style={{
-                    backgroundColor: color.colorName,
-                  }}
-                ></div>
-              </div>
-            </>
+            <div key={color.colorId}>
+              <div
+                key={color.colorName}
+                onClick={() => props.handleSelectOption(color.colorId)}
+                // onClick={() => props.handleSelectOption(color.colorId)}
+                className="color-circle"
+                style={{
+                  backgroundColor: color.colorName,
+                }}
+              ></div>
+            </div>
           ))}
         </div>
         {/* <Quantity colors={props.colors} /> */}
