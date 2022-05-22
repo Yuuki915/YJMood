@@ -2,8 +2,8 @@ import "./App.css";
 import pageData from "./data/new-data.json";
 import Product from "./components/product-pages/Product";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/home/Home";
 
+import Home from "./components/home/Home";
 import NewPage from "./components/pages/page/NewPage";
 import SalePage from "./components/pages/page/SalePage";
 import TopsPage from "./components/pages/page/TopsPage";
@@ -19,8 +19,6 @@ import PajamasPage from "./components/pages/page/PajamasPage";
 // import ToggleBtn from "./Test";
 
 export default function App() {
-  // console.log(pageData.map((e) => e.id));
-
   return (
     <div className="App">
       <Router>
