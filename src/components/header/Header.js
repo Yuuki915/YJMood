@@ -1,4 +1,6 @@
+import { LayoutGroup } from "framer-motion";
 import React from "react";
+import Logout from "../pages/Logout";
 import "./Header.css";
 import Navbar from "./Navbar";
 import ShoppingBtn from "./ShoppingBtn";
@@ -27,6 +29,7 @@ export default function Header() {
         <div className="header-contact">Contact</div>
 
         <ShoppingBtn />
+        <Logout />
       </div>
 
       <Navbar />
