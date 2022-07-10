@@ -13,15 +13,15 @@ export default function Home() {
 
   return (
     <div>
-      {user ? (
-        <>
-          <Header />
-          <Main />
-          <Footer />
-        </>
+      {/* {user ? (
+        <> */}
+      <Header />
+      <Main />
+      <Footer />
+      {/* </>
       ) : (
         <Login />
-      )}
+      )} */}
     </div>
   );
 }
