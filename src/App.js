@@ -13,6 +13,8 @@ import OuterPage from "./components/pages/page/OuterPage";
 import AccessoriesPage from "./components/pages/page/AccessoriesPage";
 import SetPage from "./components/pages/page/SetPage";
 import PajamasPage from "./components/pages/page/PajamasPage";
+import Register from "./components/pages/Register";
+import Login from "./components/pages/Login";
 // import MenPage from "./components/pages/page/MenPage";
 
 // import Test from "./Test";
@@ -26,6 +28,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
 
           {/* pages */}
+          <Route path="/signup" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+
           <Route path="/new" element={<NewPage />} />
           <Route path="/sale" element={<SalePage />} />
           <Route path="/tops" element={<TopsPage />} />
